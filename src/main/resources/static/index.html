@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+</head>
+<body>
+<h1>Upload</h1>
+<form action="#" th:action="@{/images/upload}" th:object="${downloadClientModel}" method="post">
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p>File: <input type="file" th:field="*{file}" /></p>
+    <input type="submit" value="Submit"/> <input type="reset" value="Reset">
+</form>
+</body>
+</html>
